@@ -118,7 +118,7 @@ function startChat() {
   addMessage('bot', 'Hi! I am a virtual assistant of OG Landscaping. What can I do for you today?');
   addButtons([
     { label: "Get a Free Estimate", action: freeEstimate },
-    { label: "Contact Us", action: contactUs }
+    { label: "book an appointment", action: bookanappointment }
   ]);
 }
 
@@ -161,7 +161,7 @@ function calculatePrice(quantity) {
   addMessage('bot', `Great! Here’s an approximate calculation: <b>$${total}</b><br>This is an approximate calculation. Contact us for the final price.`);
   addButtons([
     { label: "Calculate Another Estimate", action: askService },
-    { label: "Contact Us", action: contactUs }
+    { label: "book an appointment", action: bookanappointment }
   ]);
 }
 
